@@ -135,7 +135,7 @@ export default function Home() {
                 alt="Custom Websites"
                 className="w-full h-40 object-cover rounded-lg mb-4"
               />
-              <a href="#" className="text-accent font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all">
+              <a href="/custom-websites" className="text-accent font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all">
                 Learn More <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -154,7 +154,7 @@ export default function Home() {
                 alt="Web Scraping"
                 className="w-full h-40 object-cover rounded-lg mb-4"
               />
-              <a href="#" className="text-accent font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all">
+              <a href="/web-scraping" className="text-accent font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all">
                 Learn More <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -173,7 +173,7 @@ export default function Home() {
                 alt="Cloud Services"
                 className="w-full h-40 object-cover rounded-lg mb-4"
               />
-              <a href="#" className="text-accent font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all">
+              <a href="/cloud-services" className="text-accent font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all">
                 Learn More <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -187,7 +187,7 @@ export default function Home() {
               <p className="text-muted-foreground mb-4">
                 Build robust, scalable APIs that power your applications. RESTful and GraphQL solutions for seamless integration.
               </p>
-              <a href="#" className="text-accent font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all">
+              <a href="/api-development" className="text-accent font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all">
                 Learn More <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -201,7 +201,7 @@ export default function Home() {
               <p className="text-muted-foreground mb-4">
                 Comprehensive security audits and implementations. Protect your digital assets with enterprise-grade solutions.
               </p>
-              <a href="#" className="text-accent font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all">
+              <a href="/security-solutions" className="text-accent font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all">
                 Learn More <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -215,7 +215,7 @@ export default function Home() {
               <p className="text-muted-foreground mb-4">
                 Native and cross-platform mobile applications. Deliver exceptional user experiences on iOS and Android.
               </p>
-              <a href="#" className="text-accent font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all">
+              <a href="/mobile-development" className="text-accent font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all">
                 Learn More <ArrowRight className="w-4 h-4" />
               </a>
             </div>

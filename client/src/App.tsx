@@ -5,14 +5,25 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import CustomWebsites from "./pages/CustomWebsites";
+import WebScraping from "./pages/WebScraping";
+import CloudServices from "./pages/CloudServices";
+import ApiDevelopment from "./pages/ApiDevelopment";
+import SecuritySolutions from "./pages/SecuritySolutions";
+import MobileDevelopment from "./pages/MobileDevelopment";
 
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/custom-websites"} component={CustomWebsites} />
+      <Route path={"/web-scraping"} component={WebScraping} />
+      <Route path={"/cloud-services"} component={CloudServices} />
+      <Route path={"/api-development"} component={ApiDevelopment} />
+      <Route path={"/security-solutions"} component={SecuritySolutions} />
+      <Route path={"/mobile-development"} component={MobileDevelopment} />
       <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
   );

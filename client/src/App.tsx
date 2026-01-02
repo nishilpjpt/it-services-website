@@ -5,6 +5,12 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import Blog from "./pages/Blog";
+import Careers from "./pages/Careers";
+import FAQ from "./pages/FAQ";
+import CaseStudies from "./pages/CaseStudies";
 import CustomWebsites from "./pages/CustomWebsites";
 import WebScraping from "./pages/WebScraping";
 import CloudServices from "./pages/CloudServices";
@@ -17,6 +23,12 @@ function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/about-us"} component={AboutUs} />
+      <Route path={"/contact-us"} component={ContactUs} />
+      <Route path={"/blog"} component={Blog} />
+      <Route path={"/careers"} component={Careers} />
+      <Route path={"/faq"} component={FAQ} />
+      <Route path={"/case-studies"} component={CaseStudies} />
       <Route path={"/custom-websites"} component={CustomWebsites} />
       <Route path={"/web-scraping"} component={WebScraping} />
       <Route path={"/cloud-services"} component={CloudServices} />

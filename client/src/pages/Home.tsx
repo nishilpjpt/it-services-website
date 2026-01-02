@@ -38,11 +38,17 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-6">
-            <a href="#services" className="text-sm font-medium hover:text-accent transition-colors">
+            <a href="/" className="text-sm font-medium hover:text-accent transition-colors">
+              Home
+            </a>
+            <a href="/#services" className="text-sm font-medium hover:text-accent transition-colors">
               Services
             </a>
-            <a href="#about" className="text-sm font-medium hover:text-accent transition-colors">
+            <a href="/about-us" className="text-sm font-medium hover:text-accent transition-colors">
               About
+            </a>
+            <a href="/contact-us" className="text-sm font-medium hover:text-accent transition-colors">
+              Contact
             </a>
             <Button className="bg-accent text-foreground hover:bg-accent/90">
               Get Started
@@ -331,42 +337,42 @@ export default function Home() {
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="font-bold text-lg mb-4">IT Services</h3>
+              <h3 className="font-bold text-lg mb-4">CYLOES</h3>
               <p className="text-gray-400 text-sm">
-                Transforming businesses through innovative IT solutions.
+                Intelligence That Accelerates. Transforming data into actionable insights.
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-accent transition-colors">Custom Websites</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Web Scraping</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Cloud Services</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">API Development</a></li>
+                <li><a href="/custom-websites" className="hover:text-accent transition-colors">Custom Websites</a></li>
+                <li><a href="/web-scraping" className="hover:text-accent transition-colors">Web Scraping</a></li>
+                <li><a href="/cloud-services" className="hover:text-accent transition-colors">Cloud Services</a></li>
+                <li><a href="/api-development" className="hover:text-accent transition-colors">API Development</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-accent transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Careers</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Contact</a></li>
+                <li><a href="/about-us" className="hover:text-accent transition-colors">About Us</a></li>
+                <li><a href="/blog" className="hover:text-accent transition-colors">Blog</a></li>
+                <li><a href="/careers" className="hover:text-accent transition-colors">Careers</a></li>
+                <li><a href="/contact-us" className="hover:text-accent transition-colors">Contact</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Legal</h4>
+              <h4 className="font-semibold mb-4">Resources</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-accent transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Cookie Policy</a></li>
+                <li><a href="/case-studies" className="hover:text-accent transition-colors">Case Studies</a></li>
+                <li><a href="/faq" className="hover:text-accent transition-colors">FAQ</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Documentation</a></li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-white/10 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-              <p>&copy; 2024 IT Services. All rights reserved.</p>
+              <p>&copy; 2024 CYLOES. All rights reserved.</p>
               <div className="flex gap-6 mt-4 md:mt-0">
                 <a href="#" className="hover:text-accent transition-colors">Twitter</a>
                 <a href="#" className="hover:text-accent transition-colors">LinkedIn</a>

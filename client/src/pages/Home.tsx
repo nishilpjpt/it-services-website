@@ -1,6 +1,9 @@
+import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Cloud, Database, Zap, Shield, Smartphone } from "lucide-react";
 import { useEffect, useState } from "react";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import Header from "@/components/Header";
 
 /**
  * Design System: Modern Minimalism with Technical Precision
@@ -10,52 +13,16 @@ import { useEffect, useState } from "react";
  */
 
 export default function Home() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
-      {/* Navigation */}
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-lg" : "bg-transparent"
-        }`}
-      >
-        <div className="container flex items-center justify-between h-16 md:h-20">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-              <span className="text-foreground font-bold text-lg">IT</span>
-            </div>
-            <span className="font-bold text-xl text-foreground hidden sm:inline">
-              IT Services
-            </span>
-          </div>
-          <div className="flex items-center gap-6">
-            <a href="/" className="text-sm font-medium hover:text-accent transition-colors">
-              Home
-            </a>
-            <a href="/#services" className="text-sm font-medium hover:text-accent transition-colors">
-              Services
-            </a>
-            <a href="/about-us" className="text-sm font-medium hover:text-accent transition-colors">
-              About
-            </a>
-            <a href="/contact-us" className="text-sm font-medium hover:text-accent transition-colors">
-              Contact
-            </a>
-            <Button className="bg-accent text-foreground hover:bg-accent/90">
-              Get Started
-            </Button>
-          </div>
-        </div>
-      </nav>
+      {/* Header */}
+      <Header currentPage="home" />
 
       {/* Hero Section */}
       <section className="relative pt-32 md:pt-40 pb-20 md:pb-32 overflow-hidden">
@@ -308,6 +275,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Carousel */}
+      <TestimonialsCarousel />
 
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-accent/10 to-accent/5">

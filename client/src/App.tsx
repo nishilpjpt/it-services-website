@@ -18,8 +18,8 @@ import ApiDevelopment from "./pages/ApiDevelopment";
 import SecuritySolutions from "./pages/SecuritySolutions";
 import MobileDevelopment from "./pages/MobileDevelopment";
 
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />
